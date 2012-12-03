@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/afs/hep.wisc.edu/home/stephane/hdfs_scheduler_caplugin/src/test_main.cc
+iostream
+-
+sstream
+-
+fstream
+-
+algorithm
+-
+iterator
+-
+string
+-
+classad/classad_distribution.h
+/afs/hep.wisc.edu/home/stephane/hdfs_scheduler_caplugin/src/classad/classad_distribution.h
+

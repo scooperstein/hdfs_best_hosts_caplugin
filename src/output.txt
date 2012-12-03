@@ -1,0 +1,822 @@
+execve("/usr/bin/condor_q", ["condor_q", "-f", "%d\\n", "strlen(hdfs_scheduler(\"/store/us", "3972273.247"], [/* 42 vars */]) = 0
+brk(0)                                  = 0x16425000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa95ffd000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa95ffe000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/java/latest/jre/lib/amd64/server/tls/x86_64/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/java/latest/jre/lib/amd64/server/tls/x86_64", 0x7fff13671780) = -1 ENOENT (No such file or directory)
+open("/usr/java/latest/jre/lib/amd64/server/tls/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/java/latest/jre/lib/amd64/server/tls", 0x7fff13671780) = -1 ENOENT (No such file or directory)
+open("/usr/java/latest/jre/lib/amd64/server/x86_64/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/java/latest/jre/lib/amd64/server/x86_64", 0x7fff13671780) = -1 ENOENT (No such file or directory)
+open("/usr/java/latest/jre/lib/amd64/server/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/java/latest/jre/lib/amd64/server", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/usr/lib64/condor/tls/x86_64/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/condor/tls/x86_64", 0x7fff13671780) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/tls/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/condor/tls", 0x7fff13671780) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/x86_64/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/condor/x86_64", 0x7fff13671780) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/condor", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+open("/etc/ld.so.cache", O_RDONLY)      = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=93227, ...}) = 0
+mmap(NULL, 93227, PROT_READ, MAP_PRIVATE, 3, 0) = 0x2baa95fff000
+close(3)                                = 0
+open("/lib64/libdl.so.2", O_RDONLY)     = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=20424, ...}) = 0
+mmap(NULL, 2109696, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa961ff000
+mprotect(0x2baa96201000, 2097152, PROT_NONE) = 0
+mmap(0x2baa96401000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x2baa96401000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libresolv.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libresolv.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libresolv.so.2", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0203\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=89880, ...}) = 0
+mmap(NULL, 2181896, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa96403000
+mprotect(0x2baa96414000, 2097152, PROT_NONE) = 0
+mmap(0x2baa96614000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x2baa96614000
+mmap(0x2baa96616000, 6920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2baa96616000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libcrypt.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libcrypt.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libcrypt.so.1", O_RDONLY)  = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360\t\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=45728, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96618000
+mmap(NULL, 2322880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa96619000
+mprotect(0x2baa96622000, 2093056, PROT_NONE) = 0
+mmap(0x2baa96821000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x2baa96821000
+mmap(0x2baa96823000, 184768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2baa96823000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libcondor_utils_7_8_6.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libcondor_utils_7_8_6.so", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240k\20\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=3670184, ...}) = 0
+mmap(NULL, 6434584, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa96851000
+mprotect(0x2baa96ba6000, 2097152, PROT_NONE) = 0
+mmap(0x2baa96da6000, 159744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x355000) = 0x2baa96da6000
+mmap(0x2baa96dcd000, 683800, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2baa96dcd000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libclassad.so.3", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libclassad.so.3", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/libclassad.so.3", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\337\1\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=571248, ...}) = 0
+mmap(NULL, 2665256, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa96e74000
+mprotect(0x2baa96efd000, 2093056, PROT_NONE) = 0
+mmap(0x2baa970fc000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x88000) = 0x2baa970fc000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libvomsapi_gcc64dbg.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libvomsapi_gcc64dbg.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\214\1\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=361672, ...}) = 0
+mmap(NULL, 2456288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa970ff000
+mprotect(0x2baa97155000, 2093056, PROT_NONE) = 0
+mmap(0x2baa97354000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x55000) = 0x2baa97354000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libglobus_gss_assist_gcc64dbg.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libglobus_gss_assist_gcc64dbg.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0003\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=55024, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa97357000
+mmap(NULL, 2149520, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa97358000
+mprotect(0x2baa97365000, 2093056, PROT_NONE) = 0
+mmap(0x2baa97564000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x2baa97564000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libglobus_gssapi_gsi_gcc64dbg.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libglobus_gssapi_gsi_gcc64dbg.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`|\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=152840, ...}) = 0
+mmap(NULL, 2246288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa97565000
+mprotect(0x2baa97589000, 2093056, PROT_NONE) = 0
+mmap(0x2baa97788000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x2baa97788000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libglobus_gsi_proxy_core_gcc64dbg.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libglobus_gsi_proxy_core_gcc64dbg.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320O\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=74736, ...}) = 0
+mmap(NULL, 2169672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9778a000
+mprotect(0x2baa9779b000, 2097152, PROT_NONE) = 0
+mmap(0x2baa9799b000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x2baa9799b000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libglobus_gsi_credential_gcc64dbg.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libglobus_gsi_credential_gcc64dbg.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`J\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=74608, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa9799c000
+mmap(NULL, 2169544, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9799d000
+mprotect(0x2baa979ae000, 2097152, PROT_NONE) = 0
+mmap(0x2baa97bae000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x2baa97bae000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libglobus_gsi_callback_gcc64dbg.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libglobus_gsi_callback_gcc64dbg.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2605\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=45304, ...}) = 0
+mmap(NULL, 2140296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa97baf000
+mprotect(0x2baa97bb9000, 2097152, PROT_NONE) = 0
+mmap(0x2baa97db9000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x2baa97db9000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libglobus_gsi_sysconfig_gcc64dbg.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libglobus_gsi_sysconfig_gcc64dbg.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320+\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=53336, ...}) = 0
+mmap(NULL, 2148368, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa97dba000
+mprotect(0x2baa97dc6000, 2097152, PROT_NONE) = 0
+mmap(0x2baa97fc6000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x2baa97fc6000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libglobus_oldgaa_gcc64dbg.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libglobus_oldgaa_gcc64dbg.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220(\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=41496, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa97fc7000
+mmap(NULL, 2136352, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa97fc8000
+mprotect(0x2baa97fd2000, 2093056, PROT_NONE) = 0
+mmap(0x2baa981d1000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x2baa981d1000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libglobus_gsi_cert_utils_gcc64dbg.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libglobus_gsi_cert_utils_gcc64dbg.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \37\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=22600, ...}) = 0
+mmap(NULL, 2117632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa981d2000
+mprotect(0x2baa981d7000, 2093056, PROT_NONE) = 0
+mmap(0x2baa983d6000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x2baa983d6000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libglobus_openssl_gcc64dbg.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libglobus_openssl_gcc64dbg.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\n\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=7248, ...}) = 0
+mmap(NULL, 2102320, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa983d7000
+mprotect(0x2baa983d9000, 2093056, PROT_NONE) = 0
+mmap(0x2baa985d8000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x2baa985d8000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libglobus_openssl_error_gcc64dbg.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libglobus_openssl_error_gcc64dbg.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\31\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=18296, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa985d9000
+mmap(NULL, 2113328, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa985da000
+mprotect(0x2baa985de000, 2093056, PROT_NONE) = 0
+mmap(0x2baa987dd000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x2baa987dd000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libglobus_proxy_ssl_gcc64dbg.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libglobus_proxy_ssl_gcc64dbg.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\37\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=20080, ...}) = 0
+mmap(NULL, 2115096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa987de000
+mprotect(0x2baa987e2000, 2097152, PROT_NONE) = 0
+mmap(0x2baa989e2000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x2baa989e2000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libglobus_callout_gcc64dbg.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libglobus_callout_gcc64dbg.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\25\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=17368, ...}) = 0
+mmap(NULL, 2112400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa989e3000
+mprotect(0x2baa989e7000, 2093056, PROT_NONE) = 0
+mmap(0x2baa98be6000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x2baa98be6000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libglobus_common_gcc64dbg.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libglobus_common_gcc64dbg.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220+\1\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=287616, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa98be7000
+mmap(NULL, 2387480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa98be8000
+mprotect(0x2baa98c2c000, 2093056, PROT_NONE) = 0
+mmap(0x2baa98e2b000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x43000) = 0x2baa98e2b000
+mmap(0x2baa98e2e000, 3608, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2baa98e2e000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libltdl_gcc64dbg.so.3", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libltdl_gcc64dbg.so.3", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\27\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=36008, ...}) = 0
+mmap(NULL, 2131168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa98e2f000
+mprotect(0x2baa98e37000, 2097152, PROT_NONE) = 0
+mmap(0x2baa99037000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x2baa99037000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libexpat.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libexpat.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libexpat.so.0", O_RDONLY)  = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20<\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=142016, ...}) = 0
+mmap(NULL, 2237192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa99038000
+mprotect(0x2baa99059000, 2093056, PROT_NONE) = 0
+mmap(0x2baa99258000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x2baa99258000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libpcre.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libpcre.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libpcre.so.0", O_RDONLY)   = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\35\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=127720, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa9925b000
+mmap(NULL, 2222984, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9925c000
+mprotect(0x2baa9927a000, 2097152, PROT_NONE) = 0
+mmap(0x2baa9947a000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x2baa9947a000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libssl.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libssl.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libssl.so.6", O_RDONLY)    = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000/\1\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=312392, ...}) = 0
+mmap(NULL, 2407856, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9947b000
+mprotect(0x2baa994c1000, 2097152, PROT_NONE) = 0
+mmap(0x2baa996c1000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x46000) = 0x2baa996c1000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libcrypto.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libcrypto.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libcrypto.so.6", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\232\5\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1364912, ...}) = 0
+mmap(NULL, 3476304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa996c7000
+mprotect(0x2baa997f4000, 2093056, PROT_NONE) = 0
+mmap(0x2baa999f3000, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12c000) = 0x2baa999f3000
+mmap(0x2baa99a14000, 15184, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2baa99a14000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libkrb5.so.3", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libkrb5.so.3", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/libkrb5.so.3", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\222\1\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=611312, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa99a18000
+mmap(NULL, 2706656, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa99a19000
+mprotect(0x2baa99aaa000, 2097152, PROT_NONE) = 0
+mmap(0x2baa99caa000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x91000) = 0x2baa99caa000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libcom_err.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libcom_err.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libcom_err.so.2", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\n\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=7832, ...}) = 0
+mmap(NULL, 2103144, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa99cae000
+mprotect(0x2baa99cb0000, 2093056, PROT_NONE) = 0
+mmap(0x2baa99eaf000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x2baa99eaf000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libk5crypto.so.3", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libk5crypto.so.3", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/libk5crypto.so.3", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260V\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=151176, ...}) = 0
+mmap(NULL, 2247528, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa99eb0000
+mprotect(0x2baa99ed4000, 2093056, PROT_NONE) = 0
+mmap(0x2baa9a0d3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x2baa9a0d3000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libkrb5support.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libkrb5support.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/libkrb5support.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360\"\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=33480, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa9a0d5000
+mmap(NULL, 2128848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9a0d6000
+mprotect(0x2baa9a0de000, 2093056, PROT_NONE) = 0
+mmap(0x2baa9a2dd000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x2baa9a2dd000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libgssapi_krb5.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libgssapi_krb5.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/libgssapi_krb5.so.2", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\222\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=188328, ...}) = 0
+mmap(NULL, 2283888, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9a2de000
+mprotect(0x2baa9a30a000, 2097152, PROT_NONE) = 0
+mmap(0x2baa9a50a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0x2baa9a50a000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libstdc++.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libstdc++.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/libstdc++.so.6", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\364\4\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=973680, ...}) = 0
+mmap(NULL, 3145600, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9a50c000
+mprotect(0x2baa9a5f2000, 2093056, PROT_NONE) = 0
+mmap(0x2baa9a7f1000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe5000) = 0x2baa9a7f1000
+mmap(0x2baa9a7fa000, 73600, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2baa9a7fa000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libm.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libm.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libm.so.6", O_RDONLY)      = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`>\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=611736, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa9a80c000
+mmap(NULL, 2629816, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9a80d000
+mprotect(0x2baa9a88f000, 2093056, PROT_NONE) = 0
+mmap(0x2baa9aa8e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x81000) = 0x2baa9aa8e000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libgcc_s.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libgcc_s.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libgcc_s.so.1", O_RDONLY)  = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\36\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=56072, ...}) = 0
+mmap(NULL, 2151784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9aa90000
+mprotect(0x2baa9aa9d000, 2097152, PROT_NONE) = 0
+mmap(0x2baa9ac9d000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x2baa9ac9d000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libpthread.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340W\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=142744, ...}) = 0
+mmap(NULL, 2204528, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9ac9e000
+mprotect(0x2baa9acb4000, 2093056, PROT_NONE) = 0
+mmap(0x2baa9aeb3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x2baa9aeb3000
+mmap(0x2baa9aeb5000, 13168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2baa9aeb5000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/lib64/condor/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libc.so.6", O_RDONLY)      = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\332\1\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1712648, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa9aeb9000
+mmap(NULL, 3498328, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9aeba000
+mprotect(0x2baa9b008000, 2093056, PROT_NONE) = 0
+mmap(0x2baa9b207000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14d000) = 0x2baa9b207000
+mmap(0x2baa9b20c000, 16728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2baa9b20c000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libz.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libz.so.1", O_RDONLY)      = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\36\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=83280, ...}) = 0
+mmap(NULL, 2178544, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9b211000
+mprotect(0x2baa9b225000, 2093056, PROT_NONE) = 0
+mmap(0x2baa9b424000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x2baa9b424000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa9b425000
+open("/usr/java/latest/jre/lib/amd64/server/libkeyutils.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libkeyutils.so.1", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\n\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=7176, ...}) = 0
+mmap(NULL, 2102416, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9b426000
+mprotect(0x2baa9b428000, 2093056, PROT_NONE) = 0
+mmap(0x2baa9b627000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x2baa9b627000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libselinux.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libselinux.so.1", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340E\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=92960, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa9b628000
+mmap(NULL, 2192800, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9b629000
+mprotect(0x2baa9b63e000, 2097152, PROT_NONE) = 0
+mmap(0x2baa9b83e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x2baa9b83e000
+mmap(0x2baa9b840000, 1440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2baa9b840000
+close(3)                                = 0
+open("/usr/java/latest/jre/lib/amd64/server/libsepol.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libsepol.so.1", O_RDONLY)  = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@=\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=245232, ...}) = 0
+mmap(NULL, 2383168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x2baa9b841000
+mprotect(0x2baa9b87c000, 2097152, PROT_NONE) = 0
+mmap(0x2baa9ba7c000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3b000) = 0x2baa9ba7c000
+mmap(0x2baa9ba7d000, 40256, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x2baa9ba7d000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa9ba87000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa9ba88000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa9ba89000
+arch_prctl(ARCH_SET_FS, 0x2baa9ba89440) = 0
+mprotect(0x2baa9b207000, 16384, PROT_READ) = 0
+mprotect(0x2baa9aeb3000, 4096, PROT_READ) = 0
+mprotect(0x2baa9aa8e000, 4096, PROT_READ) = 0
+mprotect(0x2baa9a7f1000, 24576, PROT_READ) = 0
+mprotect(0x2baa96821000, 4096, PROT_READ) = 0
+mprotect(0x2baa96614000, 4096, PROT_READ) = 0
+mprotect(0x2baa96401000, 4096, PROT_READ) = 0
+mprotect(0x2baa961fd000, 4096, PROT_READ) = 0
+munmap(0x2baa95fff000, 93227)           = 0
+set_tid_address(0x2baa9ba894d0)         = 18815
+set_robust_list(0x2baa9ba894e0, 0x18)   = 0
+futex(0x7fff136722dc, FUTEX_WAKE_PRIVATE, 1) = 0
+rt_sigaction(SIGRTMIN, {0x2baa9aca33c0, [], SA_RESTORER|SA_SIGINFO, 0x2baa9acacbe0}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x2baa9aca32f0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x2baa9acacbe0}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=10240*1024, rlim_max=RLIM_INFINITY}) = 0
+access("/etc/selinux/", F_OK)           = 0
+brk(0)                                  = 0x16425000
+brk(0x16446000)                         = 0x16446000
+open("/etc/selinux/config", O_RDONLY)   = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=532, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa95fff000
+read(3, "# This file controls the state o"..., 1024) = 532
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x2baa95fff000, 4096)            = 0
+open("/proc/mounts", O_RDONLY)          = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa95fff000
+read(3, "rootfs / rootfs rw 0 0\n/dev/root"..., 1024) = 1024
+close(3)                                = 0
+munmap(0x2baa95fff000, 4096)            = 0
+open("/selinux/mls", O_RDONLY)          = 3
+read(3, "1", 19)                        = 1
+close(3)                                = 0
+socket(PF_FILE, SOCK_STREAM, 0)         = 3
+connect(3, {sa_family=AF_FILE, path="/var/run/setrans/.setrans-unix"...}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+futex(0x2baa9a7fbca8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+socket(PF_FILE, SOCK_STREAM, 0)         = 3
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+connect(3, {sa_family=AF_FILE, path="/var/run/nscd/socket"...}, 110) = 0
+sendto(3, "\2\0\0\0\v\0\0\0\7\0\0\0passwd\0", 19, MSG_NOSIGNAL, NULL, 0) = 19
+poll([{fd=3, events=POLLIN|POLLERR|POLLHUP}], 1, 5000) = 1 ([{fd=3, revents=POLLIN|POLLHUP}])
+recvmsg(3, {msg_name(0)=NULL, msg_iov(2)=[{"passwd\0", 7}, {"\270O\3\0\0\0\0\0", 8}], msg_controllen=24, {cmsg_len=20, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, {4}}, msg_flags=0}, 0) = 15
+mmap(NULL, 217016, PROT_READ, MAP_SHARED, 4, 0) = 0x2baa95fff000
+close(4)                                = 0
+close(3)                                = 0
+uname({sys="Linux", node="login06.hep.wisc.edu", ...}) = 0
+open("/etc/issue", O_RDONLY)            = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(3, {st_mode=S_IFREG|0644, st_size=57, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96034000
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "Scientific Linux release 5.8 (Bo"..., 1024) = 57
+close(3)                                = 0
+munmap(0x2baa96034000, 4096)            = 0
+uname({sys="Linux", node="login06.hep.wisc.edu", ...}) = 0
+open("/proc/meminfo", O_RDONLY)         = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96034000
+read(3, "MemTotal:     65879476 kB\nMemFre"..., 1024) = 778
+close(3)                                = 0
+munmap(0x2baa96034000, 4096)            = 0
+open("/proc/cpuinfo", O_RDONLY)         = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96034000
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "processor\t: 0\nvendor_id\t: Authen"..., 1024) = 1024
+read(3, "\t: yes\nfpu_exception\t: yes\ncpuid"..., 1024) = 1024
+read(3, "nstop_tsc pni cx16 popcnt lahf_l"..., 1024) = 1024
+read(3, " bits virtual\npower management: "..., 1024) = 1024
+read(3, "sical id\t: 1\nsiblings\t: 12\ncore "..., 1024) = 1024
+read(3, "call nx mmxext fxsr_opt pdpe1gb "..., 1024) = 1024
+read(3, "lush size\t: 64\ncache_alignment\t:"..., 1024) = 1024
+read(3, " Processor 6176\nstepping\t: 1\ncpu"..., 1024) = 1024
+read(3, "cx8 apic sep mtrr pge mca cmov p"..., 1024) = 1024
+read(3, "lignsse 3dnowprefetch osvw\nbogom"..., 1024) = 1024
+read(3, "or_id\t: AuthenticAMD\ncpu family\t"..., 1024) = 1024
+read(3, "ion\t: yes\ncpuid level\t: 5\nwp\t\t: "..., 1024) = 1024
+read(3, "16 popcnt lahf_lm cmp_legacy svm"..., 1024) = 1024
+read(3, "ower management: ts ttp tm stc 1"..., 1024) = 1024
+read(3, "siblings\t: 12\ncore id\t\t: 0\ncpu c"..., 1024) = 1024
+read(3, "xt fxsr_opt pdpe1gb rdtscp lm 3d"..., 1024) = 1024
+read(3, " 64\ncache_alignment\t: 64\naddress"..., 1024) = 1024
+read(3, "r 6176\nstepping\t: 1\ncpu MHz\t\t: 2"..., 1024) = 1024
+read(3, "sep mtrr pge mca cmov pat pse36 "..., 1024) = 446
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x2baa96034000, 4096)            = 0
+geteuid()                               = 4127
+getuid()                                = 4127
+geteuid()                               = 4127
+open("/afs/hep.wisc.edu/home/stephane/.condor/condor_config", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/etc/condor/condor_config", O_RDONLY) = 3
+close(3)                                = 0
+stat("/etc/condor/condor_config", {st_mode=S_IFREG|0644, st_size=110803, ...}) = 0
+open("/etc/condor/condor_config", O_RDONLY) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(3, {st_mode=S_IFREG|0644, st_size=110803, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96034000
+lseek(3, 0, SEEK_CUR)                   = 0
+close(3)                                = 0
+munmap(0x2baa96034000, 4096)            = 0
+open("/etc/condor/condor_config", O_RDONLY) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(3, {st_mode=S_IFREG|0644, st_size=110803, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96034000
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "################################"..., 1024) = 1024
+read(3, "t are commented out show\n##  the"..., 1024) = 1024
+read(3, "#########\n\n##  What machine is y"..., 1024) = 1024
+read(3, "EXP = ^((\\..*)|(.*~)|(#.*)|(.*\\."..., 1024) = 1024
+read(3, "has its own UID space.\nUID_DOMAI"..., 1024) = 1024
+read(3, "      #    #  #    #     #      "..., 1024) = 1024
+read(3, "ss to these machines to join you"..., 1024) = 1024
+read(3, "s is:\n#FLOCK_NEGOTIATOR_HOSTS = "..., 1024) = 1024
+read(3, ".\n##  Unfortunately, this will m"..., 1024) = 1024
+read(3, "ation.\n##  It is important to ha"..., 1024) = 1024
+read(3, "ng from a configuration that use"..., 1024) = 1024
+read(3, "access should only be granted wi"..., 1024) = 1024
+read(3, "ettings, what they're for, and h"..., 1024) = 1024
+read(3, "istrators must define this.\n## N"..., 1024) = 1024
+read(3, " kind of\n##  permission for cust"..., 1024) = 1024
+read(3, "--------------------------------"..., 1024) = 1024
+read(3, "cute machine is used.  The defau"..., 1024) = 1024
+read(3, "t/ipv4/ip_local_port_range.\n#MAX"..., 1024) = 1024
+read(3, " execute machines (limit applied"..., 1024) = 1024
+read(3, "r official hostname or as an ali"..., 1024) = 1024
+read(3, "of a core file.  By default,\n## "..., 1024) = 1024
+read(3, "you\n##  might want to glidein to"..., 1024) = 1024
+read(3, "ondor to trust whatever UID_DOMA"..., 1024) = 1024
+read(3, "RARY shell commands to be run by"..., 1024) = 1024
+read(3, " full-blown startd (some of the "..., 1024) = 1024
+read(3, "_GSI_CREDENTIALS = False\n\n## Thi"..., 1024) = 1024
+read(3, "ess to bind network sockets to. "..., 1024) = 1024
+read(3, "hen the master starts up, should"..., 1024) = 1024
+read(3, "                             ###"..., 1024) = 1024
+read(3, "cify the universe in a human-rea"..., 1024) = 1024
+brk(0x16467000)                         = 0x16467000
+read(3, "RANK expression controls which j"..., 1024) = 1024
+read(3, ")\n\n# When should we only conside"..., 1024) = 1024
+read(3, "OTIATOR_PRE_JOB_RANK = $(UWCS_NE"..., 1024) = 1024
+read(3, "ing a Condor job \n# (NOTE: Condo"..., 1024) = 1024
+read(3, "s been suspended longer than we "..., 1024) = 1024
+read(3, "obs will be\n##  accepted on the "..., 1024) = 1024
+read(3, "         || (SUSPEND_VANILLA && "..., 1024) = 1024
+read(3, "Ad\n##    3. NEGOTIATOR_POST_JOB_"..., 1024) = 1024
+read(3, " (KFlops - SlotID - 1.0e10*(Offl"..., 1024) = 1024
+read(3, " are equal.\nUWCS_PREEMPTION_RANK"..., 1024) = 1024
+read(3, "FE = 1200\n\n\n####################"..., 1024) = 1024
+read(3, "b/condor/spool\nEXECUTE\t\t= $(LOCA"..., 1024) = 1024
+read(3, "trols how often any lock files c"..., 1024) = 1024
+read(3, "ion 6.7.3 or earlier, you can un"..., 1024) = 1024
+read(3, "s all share a common UID\n##  dom"..., 1024) = 1024
+read(3, "n-essential\n##  communication.  "..., 1024) = 1024
+read(3, " your collector, and each\n##  en"..., 1024) = 1024
+read(3, "pond for too long, do you want g"..., 1024) = 1024
+read(3, "daemons?\nMASTER\t\t\t\t= $(SBIN)/con"..., 1024) = 1024
+read(3, " it to nothing.\nPREEN\t\t\t\t= $(SBI"..., 1024) = 1024
+read(3, " the time stamps of the\n##  daem"..., 1024) = 1024
+read(3, "rashing before we consider\n##  i"..., 1024) = 1024
+read(3, "ondor installs.\nCOLLECTOR_ADDRES"..., 1024) = 1024
+read(3, "\t\t= $(SBIN)/condor_starter\nSTART"..., 1024) = 1024
+read(3, "0, so this expression says as so"..., 1024) = 1024
+read(3, " (clinpack) benchmark: load 1.0\n"..., 1024) = 1024
+read(3, "tion of the pathname.\n#CONSOLE_D"..., 1024) = 1024
+read(3, "er macros or\n##  expressions.\n##"..., 1024) = 1024
+read(3, " slot classified\n##  ads:\n##\n## "..., 1024) = 1024
+read(3, "eSize, JobUniverse, NiceUser\n\n##"..., 1024) = 1024
+read(3, "ly detect the amount of physical"..., 1024) = 1024
+read(3, "l details.  The various settings"..., 1024) = 1024
+read(3, "example:\n#SLOT_TYPE_1 = 1/8\n#SLO"..., 1024) = 1024
+read(3, ")?  This defaults to all slots ("..., 1024) = 1024
+read(3, "he value to 0.  If you change yo"..., 1024) = 1024
+read(3, "##    AvailSince = At what time "..., 1024) = 1024
+read(3, "s\n##\texecutable will be here: $("..., 1024) = 1024
+read(3, "  This feature is necessary for "..., 1024) = 1024
+read(3, "ant the shadows? (1-19).\n##  The"..., 1024) = 1024
+read(3, "ute.  Setting NEGOTIATE_ALL_JOBS"..., 1024) = 1024
+read(3, " What users do you want to grant"..., 1024) = 1024
+read(3, "lse\n\n##  Should we write vacate "..., 1024) = 1024
+read(3, "bs. (1-19)  The larger the numbe"..., 1024) = 1024
+read(3, " use to remove a directory\n##  c"..., 1024) = 1024
+read(3, "ike:\n#         \\\\.\\pipe\\condor_p"..., 1024) = 1024
+read(3, "nt these entries.\n#APPEND_REQUIR"..., 1024) = 1024
+read(3, "xpression for standard jobs)\n\n##"..., 1024) = 1024
+read(3, "--------------------------------"..., 1024) = 1024
+read(3, "AVA_CLASSPATH_DEFAULT gives the "..., 1024) = 1024
+read(3, "_ARGUMENTS =\n\n##\n##-------------"..., 1024) = 1024
+read(3, "ME)\nGRIDMANAGER_LOCK = $(LOCK)/G"..., 1024) = 1024
+read(3, "rst option is how often to check"..., 1024) = 1024
+read(3, " does not submit your job withou"..., 1024) = 1024
+read(3, "ite permission to the directory "..., 1024) = 1024
+read(3, "proxies which are\n## about to ex"..., 1024) = 1024
+read(3, "##  When the credd starts up, it"..., 1024) = 1024
+read(3, "ectory must exist\n## prior to st"..., 1024) = 1024
+read(3, "ed an additional \"-n host:port\" "..., 1024) = 1024
+read(3, "$(STORK_LOG_BASE)\n\n## Stork envi"..., 1024) = 1024
+read(3, "e directory used by Stork.\n#STOR"..., 1024) = 1024
+read(3, "\n# \n# If Quill is enabled, by de"..., 1024) = 1024
+read(3, "# The required password for the "..., 1024) = 1024
+read(3, "you need to debug quill for some"..., 1024) = 1024
+read(3, " calls (in seconds)\n#DATABASE_PU"..., 1024) = 1024
+read(3, "e increased for very large datab"..., 1024) = 1024
+read(3, " by the \n## virtual machine prog"..., 1024) = 1024
+read(3, "ished.\n## If the interval betwee"..., 1024) = 1024
+read(3, "when we suspend a VM, the memory"..., 1024) = 1024
+read(3, " universe job.\n## If neither \"VM"..., 1024) = 1024
+read(3, " of VMware networking is used?\n#"..., 1024) = 1024
+read(3, "n VM\n## universe\nLIBVIRT_XML_SCR"..., 1024) = 1024
+read(3, "ndor_lease_manager\n\n# Turn on th"..., 1024) = 1024
+read(3, "p, it can place it's address (IP"..., 1024) = 1024
+read(3, " true\n\n# Command condor_ssh_to_j"..., 1024) = 1024
+read(3, "sh-keygen\n\n# Arguments to ssh-ke"..., 1024) = 1024
+read(3, " location\n## is under 'libexec' "..., 1024) = 1024
+read(3, "eNode state, thus \n##         cr"..., 1024) = 1024
+read(3, "###########\n\n## Sets the log4j d"..., 1024) = 1024
+read(3, "--------------------------------"..., 1024) = 211
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x2baa96034000, 4096)            = 0
+uname({sys="Linux", node="login06.hep.wisc.edu", ...}) = 0
+socket(PF_NETLINK, SOCK_RAW, 0)         = 3
+bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+getsockname(3, {sa_family=AF_NETLINK, pid=18815, groups=00000000}, [11163396979067715596]) = 0
+sendto(3, "\24\0\0\0\22\0\1\3\373!\271P\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\370\0\0\0\20\0\2\0\373!\271P\177I\0\0\0\0\4\3\1\0\0\0I\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 1000
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\373!\271P\177I\0\0\0\0\0\0\1\0\0\0I\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+sendto(3, "\24\0\0\0\26\0\1\3\374!\271P\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"<\0\0\0\24\0\2\0\374!\271P\177I\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 128
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"@\0\0\0\24\0\2\0\374!\271P\177I\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 128
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\374!\271P\177I\0\0\0\0\0\0\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+close(3)                                = 0
+open("/etc/gai.conf", O_RDONLY)         = -1 ENOENT (No such file or directory)
+futex(0x2baa9b20da08, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+socket(PF_NETLINK, SOCK_RAW, 0)         = 3
+bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+getsockname(3, {sa_family=AF_NETLINK, pid=18815, groups=00000000}, [1398116652050022412]) = 0
+sendto(3, "\24\0\0\0\26\0\1\3\373!\271P\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"<\0\0\0\24\0\2\0\373!\271P\177I\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 128
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"@\0\0\0\24\0\2\0\373!\271P\177I\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 128
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\373!\271P\177I\0\0\0\0\0\0\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+close(3)                                = 0
+open("/etc/resolv.conf", O_RDONLY)      = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=107, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96034000
+read(3, "domain hep.wisc.edu\nsearch hep.w"..., 1024) = 107
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x2baa96034000, 4096)            = 0
+socket(PF_FILE, SOCK_STREAM, 0)         = 3
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+connect(3, {sa_family=AF_FILE, path="/var/run/nscd/socket"...}, 110) = 0
+sendto(3, "\2\0\0\0\r\0\0\0\6\0\0\0hosts\0", 18, MSG_NOSIGNAL, NULL, 0) = 18
+poll([{fd=3, events=POLLIN|POLLERR|POLLHUP}], 1, 5000) = 1 ([{fd=3, revents=POLLIN}])
+recvmsg(3, {msg_name(0)=NULL, msg_iov(2)=[{"hosts\0", 6}, {"\270O\3\0\0\0\0\0", 8}], msg_controllen=24, {cmsg_len=20, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, {4}}, msg_flags=0}, 0) = 14
+mmap(NULL, 217016, PROT_READ, MAP_SHARED, 4, 0) = 0x2baa96034000
+close(4)                                = 0
+close(3)                                = 0
+mmap(NULL, 528384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96069000
+open("/etc/condor/config.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+lseek(3, 0, SEEK_SET)                   = 0
+getdents(3, /* 3 entries */, 32768)     = 88
+stat("/etc/condor/config.d/99_gratia.conf", {st_mode=S_IFREG|0644, st_size=193, ...}) = 0
+lstat("/etc/condor/config.d/99_gratia.conf", {st_mode=S_IFREG|0644, st_size=193, ...}) = 0
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/etc/condor/config.d/99_gratia.conf", {st_mode=S_IFREG|0644, st_size=193, ...}) = 0
+open("/etc/condor/config.d/99_gratia.conf", O_RDONLY) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(3, {st_mode=S_IFREG|0644, st_size=193, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa960ea000
+lseek(3, 0, SEEK_CUR)                   = 0
+close(3)                                = 0
+munmap(0x2baa960ea000, 4096)            = 0
+open("/etc/condor/config.d/99_gratia.conf", O_RDONLY) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(3, {st_mode=S_IFREG|0644, st_size=193, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa960ea000
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "# This file is from the gratia-p"..., 1024) = 193
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x2baa960ea000, 4096)            = 0
+munmap(0x2baa96069000, 528384)          = 0
+stat("/etc/condor/condor_config.local", {st_mode=S_IFREG|0644, st_size=26630, ...}) = 0
+open("/etc/condor/condor_config.local", O_RDONLY) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(3, {st_mode=S_IFREG|0644, st_size=26630, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96069000
+lseek(3, 0, SEEK_CUR)                   = 0
+close(3)                                = 0
+munmap(0x2baa96069000, 4096)            = 0
+open("/etc/condor/condor_config.local", O_RDONLY) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(3, {st_mode=S_IFREG|0644, st_size=26630, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96069000
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "################################"..., 1024) = 1024
+read(3, "bmit jobs to machines that are n"..., 1024) = 1024
+read(3, "E = *.hep.wisc.edu *.chtc.wisc.e"..., 1024) = 1024
+read(3, ".5*Cpus\n\n# Only consider startin"..., 1024) = 1024
+read(3, "e it,\n# don't want to forget thi"..., 1024) = 1024
+read(3, "inue to run (after sending\n# a s"..., 1024) = 1024
+read(3, "ted, let the job finish running\n"..., 1024) = 1024
+read(3, "_does_ take suspension\n# into ac"..., 1024) = 1024
+read(3, "1*(IsDesktop   =!= True)\n\n# If a"..., 1024) = 1024
+read(3, " this.\nAPPEND_REQ_VANILLA = (MY."..., 1024) = 1024
+read(3, "UTABLE = /opt/hawkeye/test_machi"..., 1024) = 1024
+read(3, "ARGS =\n\nSTARTD_CRON_JOBLIST = $("..., 1024) = 1024
+read(3, "RTD_CRON_CHECK_UWCMS_CVMFS_ARGS "..., 1024) = 1024
+read(3, "ue\n# We had ~8k jobs at FNAL and"..., 1024) = 1024
+read(3, "\n# SLOT3_USER = cndrusr3\n# SLOT4"..., 1024) = 1024
+read(3, "= 5\n\n\n# for scalability of job s"..., 1024) = 1024
+read(3, " =!= True\nWANT_SUSPEND = ($(WANT"..., 1024) = 1024
+read(3, "ob classad.\nSTARTD_JOB_EXPRS = $"..., 1024) = 1024
+read(3, "old.\nSYSTEM_PERIODIC_HOLD = \\\n  "..., 1024) = 1024
+read(3, "ave the master send SIGKILL inst"..., 1024) = 1024
+read(3, "inks/slot11\nSLOT12_EXECUTE = /va"..., 1024) = 1024
+read(3, "/slot31\nSLOT32_EXECUTE = /var/co"..., 1024) = 1024
+read(3, "t51\nSLOT52_EXECUTE = /var/condor"..., 1024) = 1024
+read(3, "SLOT72_EXECUTE = /var/condor/.ex"..., 1024) = 1024
+brk(0x16488000)                         = 0x16488000
+read(3, "92_EXECUTE = /var/condor/.execut"..., 1024) = 1024
+read(3, "e-links/slot111\nSLOT112_EXECUTE "..., 1024) = 1024
+read(3, " TRUE\n", 1024)                = 6
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x2baa96069000, 4096)            = 0
+stat("/etc/condor/login06.local", {st_mode=S_IFREG|0644, st_size=505, ...}) = 0
+open("/etc/condor/login06.local", O_RDONLY) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(3, {st_mode=S_IFREG|0644, st_size=505, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96069000
+lseek(3, 0, SEEK_CUR)                   = 0
+close(3)                                = 0
+munmap(0x2baa96069000, 4096)            = 0
+open("/etc/condor/login06.local", O_RDONLY) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(3, {st_mode=S_IFREG|0644, st_size=505, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96069000
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "#Do not run a startd on login ma"..., 1024) = 505
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x2baa96069000, 4096)            = 0
+geteuid()                               = 4127
+getuid()                                = 4127
+getgid()                                = 4127
+getppid()                               = 18814
+uname({sys="Linux", node="login06.hep.wisc.edu", ...}) = 0
+socket(PF_NETLINK, SOCK_RAW, 0)         = 3
+bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+getsockname(3, {sa_family=AF_NETLINK, pid=18815, groups=00000000}, [1604802298083541004]) = 0
+sendto(3, "\24\0\0\0\26\0\1\3\373!\271P\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"<\0\0\0\24\0\2\0\373!\271P\177I\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 128
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"@\0\0\0\24\0\2\0\373!\271P\177I\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 128
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\373!\271P\177I\0\0\0\0\0\0\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+close(3)                                = 0
+geteuid()                               = 4127
+getuid()                                = 4127
+getgid()                                = 4127
+rt_sigaction(SIGPIPE, {0x1, [], SA_RESTORER, 0x2baa9acacbe0}, NULL, 8) = 0
+socket(PF_NETLINK, SOCK_RAW, 0)         = 3
+bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+getsockname(3, {sa_family=AF_NETLINK, pid=18815, groups=00000000}, [12]) = 0
+sendto(3, "\24\0\0\0\26\0\1\3\373!\271P\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"<\0\0\0\24\0\2\0\373!\271P\177I\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 128
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"@\0\0\0\24\0\2\0\373!\271P\177I\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 128
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\373!\271P\177I\0\0\0\0\0\0\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+close(3)                                = 0
+open("/var/condor/spool/.schedd_classad", O_RDONLY) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(3, {st_mode=S_IFREG|0644, st_size=3930, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96069000
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "StartLocalUniverse = TotalLocalJ"..., 4096) = 3930
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x2baa96069000, 4096)            = 0
+open("/var/condor/spool/.schedd_classad", O_RDONLY) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(3, {st_mode=S_IFREG|0644, st_size=3930, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96069000
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "StartLocalUniverse = TotalLocalJ"..., 4096) = 3930
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x2baa96069000, 4096)            = 0
+open("/etc/localtime", O_RDONLY)        = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3543, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3543, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x2baa96069000
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0\5\0\0\0\0"..., 1024) = 1024
+lseek(3, 255, SEEK_CUR)                 = 1279
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0\6\0\0\0\0"..., 1024) = 1024
+read(3, "\25I8\0\0\0\0\0\0269\32\360\0\0\0\0\27)\32\0\0\0\0\0\30\"7p\0\0\0\0"..., 1024) = 1024
+read(3, "\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2"..., 1024) = 216
+close(3)                                = 0
+munmap(0x2baa96069000, 4096)            = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_IP) = 3
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+bind(3, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("0.0.0.0")}, 16) = 0
+setsockopt(3, SOL_SOCKET, SO_LINGER, {onoff=0, linger=0}, 8) = 0
+setsockopt(3, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+setsockopt(3, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+connect(3, {sa_family=AF_INET, sin_port=htons(41962), sin_addr=inet_addr("144.92.181.245")}, 16) = -1 EINPROGRESS (Operation now in progress)
+getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=1024}) = 0
+select(4, [], [3], [3], {300, 0})       = 1 (out [3], left {300, 0})
+getsockopt(3, SOL_SOCKET, SO_ERROR, [1288490188800], [4]) = 0
+fcntl(3, F_GETFL)                       = 0x802 (flags O_RDWR|O_NONBLOCK)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+getsockname(3, {sa_family=AF_INET, sin_port=htons(42843), sin_addr=inet_addr("144.92.181.245")}, [6604247387152056336]) = 0
+select(4, [3], [3], [3], {300, 0})      = 1 (out [3], left {300, 0})
+sendto(3, "\1\0\0\1z\0\0\0\0\0\0\352j\0\0\0\0\0\0\0\16Enact = \"NO"..., 383, 0, NULL, 0) = 383
+select(4, [3], [], [], {300, 0})        = 1 (in [3], left {299, 999000})
+recvfrom(3, "\1\0\0\1'", 5, 0, NULL, NULL) = 5
+select(4, [3], [], [], {300, 0})        = 1 (in [3], left {300, 0})
+recvfrom(3, "\0\0\0\0\0\0\0\vEnact = \"YES\"\0CryptoMeth"..., 295, 0, NULL, NULL) = 295
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=3543, ...}) = 0
+select(4, [3], [], [], {300, 0})        = 1 (in [3], left {300, 0})
+recvfrom(3, "\1\0\0\0\237", 5, 0, NULL, NULL) = 5
+select(4, [3], [], [], {300, 0})        = 1 (in [3], left {300, 0})
+recvfrom(3, "\0\0\0\0\0\0\0\4Sid = \"login06:32596:135"..., 159, 0, NULL, NULL) = 159
+geteuid()                               = 4127
+select(4, [3], [3], [3], {300, 0})      = 1 (out [3], left {300, 0})
+sendto(3, "\1\0\0\0K\0\0\0\0\0\0'&\0\0\0\0\0\0'*( ( ( ( Clu"..., 80, 0, NULL, 0) = 80
+select(4, [3], [], [], {300, 0})        = 1 (in [3], left {299, 952000})
+recvfrom(3, "\0\0\0\17\373", 5, 0, NULL, NULL) = 5
+select(4, [3], [], [], {300, 0})        = 1 (in [3], left {300, 0})
+recvfrom(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0fCommittedSlotTim"..., 4091, 0, NULL, NULL) = 4091
+select(4, [3], [], [], {300, 0})        = 1 (in [3], left {299, 979000})
+recvfrom(3, "\1\0\0\f\276", 5, 0, NULL, NULL) = 5
+select(4, [3], [], [], {300, 0})        = 1 (in [3], left {300, 0})
+recvfrom(3, "ARGET.Disk >= RequestDisk ) && ("..., 3262, 0, NULL, NULL) = 3262
+brk(0x164aa000)                         = 0x164aa000
+select(4, [3], [3], [3], {300, 0})      = 1 (out [3], left {300, 0})
+sendto(3, "\1\0\0\0\10\0\0\0\0\0\0'\27", 13, 0, NULL, 0) = 13
+select(4, [3], [], [], {300, 0})        = 1 (in [3], left {300, 0})
+recvfrom(3, "\1\0\0\0\10", 5, 0, NULL, NULL) = 5
+select(4, [3], [], [], {300, 0})        = 1 (in [3], left {300, 0})
+recvfrom(3, "\0\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+select(4, [3], [3], [3], {300, 0})      = 1 (out [3], left {300, 0})
+sendto(3, "\1\0\0\0\10\0\0\0\0\0\0',", 13, 0, NULL, 0) = 13
+close(3)                                = 0
+exit_group(0)                           = ?

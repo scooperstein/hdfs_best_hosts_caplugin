@@ -1,0 +1,1 @@
+/usr/bin/c++     -fPIC CMakeFiles/classad_hdfs_scheduler_tester.dir/test_main.cc.o  -o classad_hdfs_scheduler_tester -rdynamic -lclassad 
