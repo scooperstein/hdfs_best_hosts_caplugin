@@ -43,15 +43,11 @@ static bool hdfs_scheduler(const char *, // name
                            Value &result)
 { 
 
-  FILE *fp = fopen("/tmp/debug_stephane.txt","a");
-  fprintf(fp,"hello world\n");
-  //fclose(fp);
-  fflush(fp);
   std::vector<std::string> filepaths;
   std::vector<host*> uniquehosts;  
   std::vector<ExprTree*> best_hosts; 
 
-  int threshold = 1; // method will return sites which host >= threshold of the files locally
+  //int threshold = 1; // method will return sites which host >= threshold of the files locally
   
   for (int i=0; i<arguments.size(); i++) {
     Value filenames_arg;
@@ -67,20 +63,15 @@ static bool hdfs_scheduler(const char *, // name
       filepaths.push_back(single_filename);
     }
   }
-  system("env>>/tmp/debug_stephane.txt"); 
-  fprintf(fp,"test2\n");
-  fflush(fp);
+
   hdfsFS fs = hdfsConnect("default",0);
-  fprintf(fp,"test2.1\n");
-  fflush(fp); 
+
   if (fs==NULL) {
     CondorErrMsg = "Could not connect to hdfs";
     result.SetErrorValue();
     return false; 
   }
-  fprintf(fp,"test3\n");
-  //fclose(fp);
-  fflush(fp);
+
   for (int i=0; i<filepaths.size(); i++) {
 
     if (hdfsExists(fs,filepaths[i].c_str())!=0) {
@@ -131,8 +122,7 @@ static bool hdfs_scheduler(const char *, // name
     }    
 
   }
-  fprintf(fp,"test4\n");
-  fflush(fp);
+  
   for (int k =0; k<uniquehosts.size(); k++) {
 
     if (uniquehosts[k]->tally >= threshold) {
@@ -149,5 +139,23 @@ static bool hdfs_scheduler(const char *, // name
   ExprList *l = new ExprList(best_hosts);
   result.SetListValue(l); 
   return true;
+}
+
+std::vector<host*> get_top_n(std:vector<host*> hosts, int n) {
+  std::vector<host*> best_hosts;
+  host *minHost;
+  int minTally;
+  for (int i=0,i<hosts.size(),i++) {
+    int maxTally;
+    int maxIndex;
+    if (hosts[i]->tally > minTally) {
+      
+    }
+    if (i<n) {
+      best_hosts.push_back(hosts[i]);
+    }  
+
+  }
+
 }
 
