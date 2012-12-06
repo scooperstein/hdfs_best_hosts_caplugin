@@ -50,8 +50,6 @@ static bool hdfs_scheduler(const char *, // name
   std::vector<ExprTree*> best_hosts; 
   int n;
 
-  //int threshold = 1; // method will return sites which host >= threshold of the files locally
-
   if (arguments.size()!=2) {
     result.SetErrorValue();
     CondorErrMsg = "exactly two arguments required";
@@ -76,15 +74,11 @@ static bool hdfs_scheduler(const char *, // name
     return false;
   }
 
-
   ExprList &files_requested = *list;
   if (v_1.IsStringValue(filename)) {
     filepaths.push_back(filename);
   }
   else {
- 
-    //std::cout<<"files_requested[0] = "<<files_requested[0]<<std::endl;
-    //for (int i=0; i<files_requested->size(); i++) {
     for (ExprList::const_iterator it = files_requested.begin(); it != files_requested.end(); it++) {
       Value filename_arg;
       const ExprTree * tree = *it;
@@ -100,12 +94,6 @@ static bool hdfs_scheduler(const char *, // name
       filepaths.push_back(single_filename);
     }
   }
-  /*std::cout<<"n = "<<n<<std::endl;
-  std::cout<<"filepaths:\n";
-  for (int i=0;i<filepaths.size();i++) {
-    std::cout<<filepaths[i]<<std::endl;
-  }*/
-  
 
   hdfsFS fs = hdfsConnect("default",0);
 
@@ -130,8 +118,7 @@ static bool hdfs_scheduler(const char *, // name
       return false;
     }
     
-    tOffset length = hdfsGetDefaultBlockSize(fs);
- 
+    tOffset length = hdfsGetDefaultBlockSize(fs); 
     char*** array = hdfsGetHosts(fs,filepaths[i].c_str(),0,length); 
  
     if (array==NULL) { 
