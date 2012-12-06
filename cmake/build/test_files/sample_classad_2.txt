@@ -1,0 +1,3 @@
+[
+  sites = hdfs_scheduler("/store/user/tapas/DoubleMu/ZMuMuSkim_28Aug2012/70192f977d2c6f020ab55f778e8ab154/skim_7_2_uWF.root",3);
+]
