@@ -13,6 +13,7 @@ using namespace classad;
 
 static bool hdfs_scheduler(const char *name, ArgumentList const &arguments,
     EvalState &state, Value &result);
+std::vector<host*> get_top_n(std::vector<host*> hosts, int n);
 
 static ClassAdFunctionMapping functions[] =
 {
@@ -45,24 +46,66 @@ static bool hdfs_scheduler(const char *, // name
 
   std::vector<std::string> filepaths;
   std::vector<host*> uniquehosts;  
+  std::vector<host*> top_n_hosts;
   std::vector<ExprTree*> best_hosts; 
+  int n;
 
   //int threshold = 1; // method will return sites which host >= threshold of the files locally
-  
-  for (int i=0; i<arguments.size(); i++) {
-    Value filenames_arg;
 
-    if (!arguments[i]->Evaluate(state, filenames_arg)) {
-      result.SetErrorValue();
-      CondorErrMsg = "Could not evaluate filename";
-      return false;
-    }     
-    
-    std::string single_filename;
-    if (filenames_arg.IsStringValue(single_filename)) {
+  if (arguments.size()!=2) {
+    result.SetErrorValue();
+    CondorErrMsg = "exactly two arguments required";
+    return false;
+  }
+
+  ExprList* list;
+  std::string filename;
+  Value v_1;
+  arguments[0]->Evaluate(state,v_1);
+  if (!v_1.IsStringValue(filename) && !v_1.IsListValue(list)) {
+    result.SetErrorValue();
+    CondorErrMsg = "first argument should either be a filepath or a list of filepaths";
+    return false;
+  }
+
+  Value v_2;
+  arguments[1]->Evaluate(state,v_2);
+  if (!v_2.IsIntegerValue(n)) {
+    result.SetErrorValue();
+    CondorErrMsg = "final argument not an integer";
+    return false;
+  }
+
+
+  ExprList &files_requested = *list;
+  if (v_1.IsStringValue(filename)) {
+    filepaths.push_back(filename);
+  }
+  else {
+ 
+    //std::cout<<"files_requested[0] = "<<files_requested[0]<<std::endl;
+    //for (int i=0; i<files_requested->size(); i++) {
+    for (ExprList::const_iterator it = files_requested.begin(); it != files_requested.end(); it++) {
+      Value filename_arg;
+      const ExprTree * tree = *it;
+      if (!tree || !tree->Evaluate(state, filename_arg)) {
+        result.SetErrorValue();
+        CondorErrMsg = "Could not evaluate filename";
+        return false;
+      }     
+      std::string single_filename;
+      if (!filename_arg.IsStringValue(single_filename)) {
+        return false;
+      }
       filepaths.push_back(single_filename);
     }
   }
+  /*std::cout<<"n = "<<n<<std::endl;
+  std::cout<<"filepaths:\n";
+  for (int i=0;i<filepaths.size();i++) {
+    std::cout<<filepaths[i]<<std::endl;
+  }*/
+  
 
   hdfsFS fs = hdfsConnect("default",0);
 
@@ -122,40 +165,43 @@ static bool hdfs_scheduler(const char *, // name
     }    
 
   }
-  
-  for (int k =0; k<uniquehosts.size(); k++) {
-
-    if (uniquehosts[k]->tally >= threshold) {
-      Value v;
-      v.SetStringValue(uniquehosts[k]->name);
-      best_hosts.push_back(Literal::MakeLiteral(v));
-    }
-
+ 
+  // create return value
+  top_n_hosts = get_top_n(uniquehosts, n); 
+  for (int k =0; k<top_n_hosts.size(); k++) {
+    Value v;
+    v.SetStringValue(top_n_hosts[k]->name);
+    best_hosts.push_back(Literal::MakeLiteral(v));
   }
 
-  
   hdfsDisconnect(fs);
-  fclose(fp);
   ExprList *l = new ExprList(best_hosts);
   result.SetListValue(l); 
   return true;
 }
 
-std::vector<host*> get_top_n(std:vector<host*> hosts, int n) {
+// a modified selection sort to get the n hosts with the greatest # files hosted locally
+std::vector<host*> get_top_n(std::vector<host*> hosts, int n) {
   std::vector<host*> best_hosts;
-  host *minHost;
-  int minTally;
-  for (int i=0,i<hosts.size(),i++) {
-    int maxTally;
-    int maxIndex;
-    if (hosts[i]->tally > minTally) {
-      
+  int maxTally; 
+  int maxIndex;
+
+  for (int i=0;i<n;i++) {
+    maxTally = hosts[0]->tally;
+    maxIndex = 0;
+
+    if (hosts.size()==0) break; 
+
+    for(int k=1;k<hosts.size();k++) {
+      if (hosts[k]->tally > maxTally) {
+        maxTally = hosts[k]->tally;
+        maxIndex = k;
+      }
     }
-    if (i<n) {
-      best_hosts.push_back(hosts[i]);
-    }  
 
+    best_hosts.push_back(hosts[maxIndex]);
+    hosts.erase(hosts.begin()+maxIndex);
   }
-
+  return best_hosts;
 }
 
