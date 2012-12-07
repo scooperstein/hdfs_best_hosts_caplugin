@@ -52,7 +52,7 @@ static bool hdfs_scheduler(const char *, // name
 
   if (arguments.size()!=2) {
     result.SetErrorValue();
-    CondorErrMsg = "exactly two arguments required";
+    CondorErrMsg = "Usage: hdfs_scheduler[filename or list of filenames,# host sites returned]";
     return false;
   }
 
@@ -70,7 +70,7 @@ static bool hdfs_scheduler(const char *, // name
   arguments[1]->Evaluate(state,v_2);
   if (!v_2.IsIntegerValue(n)) {
     result.SetErrorValue();
-    CondorErrMsg = "final argument not an integer";
+    CondorErrMsg = "final argument should be the number of best host sites returned";
     return false;
   }
 
@@ -112,20 +112,8 @@ static bool hdfs_scheduler(const char *, // name
     }
    
     hdfsFileInfo* fileInfo = hdfsGetPathInfo(fs, filepaths[i].c_str());  
-    if (fileInfo==NULL) {
-      CondorErrMsg = "fileInfo is null";
-      result.SetErrorValue();
-      return false;
-    }
-    
     tOffset length = hdfsGetDefaultBlockSize(fs); 
     char*** array = hdfsGetHosts(fs,filepaths[i].c_str(),0,length); 
- 
-    if (array==NULL) { 
-      CondorErrMsg = "array is null";
-      result.SetErrorValue();
-      return false;
-    }
      
     if (*array == 0) continue;
 
