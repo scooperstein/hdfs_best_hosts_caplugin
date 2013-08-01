@@ -6,5 +6,6 @@ set( CMAKE_MODULE_PATH
 
 find_package( Classad REQUIRED )
 
-include_directories ("${PROJECT_SOURCE_DIR}" "/usr/java/jdk1.6.0_37/include/" "/usr/java/jdk1.6.0_37/include/linux")
+include_directories ("${PROJECT_SOURCE_DIR}" "/usr/java/jdk1.6.0_45/include/"
+"/usr/java/jdk1.6.0_45/include/linux")
 add_subdirectory(src)

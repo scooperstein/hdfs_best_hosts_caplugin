@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
 		std::cout << "Failed to load ClassAd user lib (" << argv[1] << "): " << classad::CondorErrMsg << std::endl;
 		return 1;
 	}
-
+        
 	std::stringstream ss;
 	std::ifstream ifs(argv[2], std::ifstream::in);
 	if (ifs)
@@ -66,6 +66,11 @@ int main(int argc, char* argv[]) {
 		{	
 			pp.Unparse(unparsed, tree);
 			std::cout << "Unable to evaluate the 'sites' attribute: " << unparsed << std::endl;
+                        if (val.IsErrorValue()) { std::cout<<"val is error value"<<std::endl; }
+                        if (!classad.EvaluateAttr("sites", val)) { std::cout<<"did not evaluate attribute successfully"<<std::endl; }
+                        std::string unparsed;
+                        pp.Unparse(unparsed, val);
+                        std::cout << "Value of 'sites' attribute: " << unparsed << std::endl;
 			if (CondorErrMsg.size())
 			{
 				std::cout << "Error message: " << CondorErrMsg << std::endl;
