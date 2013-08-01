@@ -1,5 +1,7 @@
 To set up:
 
+source old_stuff/setenv.sh
+
 cd cmake/build
 
 cmake ../..
