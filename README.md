@@ -1,3 +1,5 @@
+This plugin is based on a framework set up by Brian Bockelman
+
 To set up:
 
 source old_stuff/setenv.sh
