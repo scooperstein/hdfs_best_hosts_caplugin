@@ -97,11 +97,15 @@ static bool hdfs_best_hosts(const char *, // name
         return false;
       }
 
-      size_t pos = single_filename.find("file:/hdfs");
+      size_t pos = single_filename.find("file:/hdfs/");
       if (pos != std::string::npos) {
           // remove 'file:/hdfs' from filename'
           single_filename.erase(pos, 10);
       }
+      size_t pos2 = single_filename.find("//");
+      if (pos2 != std::string::npos) {
+          single_filename.erase(pos,1);
+      } 
       filepaths.push_back(single_filename);
     }
     
@@ -118,7 +122,7 @@ static bool hdfs_best_hosts(const char *, // name
   for (int i=0; i<filepaths.size(); i++) {
 
     if (hdfsExists(fs,filepaths[i].c_str())!=0) {
-      CondorErrMsg = "File does not exist on filesystem.";
+      CondorErrMsg = std::string("File ") + filepaths[i] + std::string("does not exist on filesystem.");
       result.SetErrorValue();
       return false;
     }
